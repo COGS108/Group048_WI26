@@ -3,7 +3,7 @@ Step 1 - Clean inflation dataset (load dataset, parse date column from daily to 
 Step 2 - Clean daily coffee prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check for missing dates)
 Step 3 - Clean daily oil prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check trading day gaps)
 Step 4 - Align CPI to daily (each day ina  month gets the same CPI value, merge daily CPI to coffee and oil dates)
-Step 5 - Deflate prices for coffee and oil (real price = nominal price x (CPI_base / CPI_t)
+Step 5 - Deflate prices for coffee and oil (real price = nominal price x (CPI_base / CPI_t) -> CPI_base is the inflation rate in the first year in our timeframe, CPI_t is the inflation rate at the "current" timepoint
 Step 6 - Clean climate data (load dataset, drop unused columns, parse datetime, convert variables to numeric, aggregate from hourly to daily to monthly, keep mean temperature and total precipitation)
 Step 7 - Determine common date window (look at min/max dates for everything and determine final analysis wondow, drop all data we won't use)
 Step 8 - Merge into master dataset (Merge daily coffee, then daily oil, then daily inflation, then monthly climate)
