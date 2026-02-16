@@ -1,8 +1,8 @@
 2.9.26 - Data cleaning
 Step 1 - Clean inflation dataset (load dataset, parse date column from daily to monthly, confirm CPI is on index level and not percent, sort and check for missing date values)
 Step 2 - Align CPI to daily (each day in a month gets the same CPI value, merge daily CPI to coffee and oil dates)
-Step 3 - Clean daily coffee prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check for missing dates)
-Step 4 - Clean daily oil prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check trading day gaps)
+ ✅ Step 3 - Clean daily coffee prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check for missing dates)
+Done Step 4 - Clean daily oil prices (load dataset, parse date column, drop duplicates, convert prices to numeric, make sure dates are in order, check trading day gaps)
 Step 5 - Clean climate data (load dataset, drop unused columns, parse datetime, convert variables to numeric, aggregate from hourly to daily to monthly, keep mean temperature and total precipitation)
 Step 6.1 - Deflate prices for coffee (real price = nominal price x (CPI_base / CPI_t) -> CPI_base is the inflation rate in the first year in our timeframe, CPI_t is the inflation rate at the "current" timepoint
 Step 6.2 - Deflate prices for oil (same procedure as coffee!)
