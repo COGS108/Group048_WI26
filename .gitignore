@@ -189,3 +189,5 @@ data/*/*.sq*
 data/*.SQ*
 data/*/*.SQ*.virtual_documents/
 anaconda_projects/
+data/00-raw/brazil-weather.csv
+data/00-raw/brazil-weather.csv
