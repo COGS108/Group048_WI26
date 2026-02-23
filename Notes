@@ -6,8 +6,12 @@
  ✅ Step 5 - Clean climate data (load dataset, drop unused columns, parse datetime, convert variables to numeric, aggregate from hourly to daily to monthly, keep mean temperature and total precipitation)
 Step 6.1 - Deflate prices for coffee (real price = nominal price x (CPI_base / CPI_t) -> CPI_base is the inflation rate in the first year in our timeframe, CPI_t is the inflation rate at the "current" timepoint
 Step 6.2 - Deflate prices for oil (same procedure as coffee!)
-Step 7 - Determine common date window (look at min/max dates for everything and determine final analysis wondow, drop all data we won't use)
+Step 7 - Determine common date window (look at min/max dates for everything and determine final analysis window, drop all data we won't use)
 Step 8 - Merge into master dataset (Merge daily coffee, then daily oil, then daily inflation, then monthly climate)
+Step 9 - Make exploratory plots/graphs (pre and post deflation for coffee and oil)
+Step 10 - Stats and math
+Step 11 - Make comparison plots/graphs (date-for-date with multiple lines in one line plot post deflation to identify lag)
+
 
 Who does what?
 Stella Hale - Step 1 + 2
@@ -24,3 +28,10 @@ Tommy Taylor - Put cleaned inflation dataset into Data Checkpoint and clarify fi
 Nischal Panthi - Put cleaned oil dataset into Data Checkpoint
 Daniel Lu - Put cleaned climate dataset into Data Checkpoint
 Michelle Ho - Revamp background section (clarify original dataset and write about two-three new datasets) and get started on 6.1 + 6.2 (if there is time!)
+
+2.23.25
+Stella Hale - Step 10 + writing
+Tommy Taylor - Merge datasets (7 + 8), date window between 2009-2021 (dependent on weather most likely)
+Nischal Panthi - Writing
+Daniel Lu - Steps 9 and 11
+Michelle Ho - Steps 6.1 and 6.2
